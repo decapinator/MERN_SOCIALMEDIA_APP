@@ -1,19 +1,19 @@
-⭐️ APP Contents ⭐️
-⌨️ Intro & app demo
-⌨️ GraphQL tech used 
-⌨️ Server demonstration
-⌨️ Setting Up Database & Server
-⌨️ Register & Login Users
-⌨️ Authentication middleware & Create/Delete posts
-⌨️ Semantic UI & Routes
-⌨️ Displaying posts
-⌨️ Login & Register pages
-⌨️ Authentication Context
-⌨️ Adding posts
-⌨️ Like Button
-⌨️ Single post page
-⌨️ Displaying, Adding & Deleting Comments
-⌨️ Info Popups
+⭐️ APP Contents ⭐️ <br/><br/>
+⌨️ Intro & app demo <br/>
+⌨️ GraphQL tech used <br/>
+⌨️ Server demonstration<br/>
+⌨️ Setting Up Database & Server<br/>
+⌨️ Register & Login Users<br/>
+⌨️ Authentication middleware & Create/Delete posts<br/>
+⌨️ Semantic UI & Routes<br/>
+⌨️ Displaying posts<br/>
+⌨️ Login & Register pages<br/>
+⌨️ Authentication Context<br/>
+⌨️ Adding posts<br/>
+⌨️ Like Button<br/>
+⌨️ Single post page<br/>
+⌨️ Displaying, Adding & Deleting Comments<br/>
+⌨️ Info Popups<br/><br/><br/>
 
 
   Deployment to Heroku & Netlify
