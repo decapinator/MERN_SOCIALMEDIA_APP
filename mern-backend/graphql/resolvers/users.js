@@ -4,14 +4,21 @@ const {UserInputError} = require('apollo-server');
 
 const {SECRET_KEY} = require('../../config');
 const User = require('../../models/User');
-const {validateResgisterInput,validateLoginInput} = require('../../util/validators');
+const {
+  validateRegisterInput,
+  validateLoginInput,
+} = require("../../util/validators");
 
 function generateToken(user){
-   return jwt.sign({
-        id:res.id,
-        email:user.email,
-        username: user.username
-    },SECRET_KEY, {expiresIn:'1h'});
+   return jwt.sign(
+     {
+       id: user.id,
+       email: user.email,
+       username: user.username,
+     },
+     SECRET_KEY,
+     { expiresIn: "1h" }
+   );
 }
 
 module.exports = {
@@ -45,12 +52,17 @@ module.exports = {
         },
        async register(_, {registerInput: {username,email,password,confirmPassword}}, context, info){
             // TODO Validate user data
-            const {valid, errors} = validateResgisterInput(username,email,password,confirmPassword);
+            const { valid, errors } = validateRegisterInput(
+              username,
+              email,
+              password,
+              confirmPassword
+            );
             if(!valid){
                 throw new UserInputError('Error',{errors});
             }
             // TODO Make sure user  doesnt already exist
-            const user = User.findOne({username});
+            const user = await User.findOne({ username });
             if(user){
                 throw new UserInputError('Usernamme is taken', {
                     errors: {
