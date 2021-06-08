@@ -1,5 +1,4 @@
 ⭐️ APP Contents ⭐️ <br/><br/>
-⌨️ Intro & app demo <br/>
 ⌨️ GraphQL tech used <br/>
 ⌨️ Server demonstration<br/>
 ⌨️ Setting Up Database & Server<br/>
